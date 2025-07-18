@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Tails – Cybercrime News Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; background: #fcfaf7; margin: 0; }
+        header { background: #531a1c; color: #fff; padding: 32px 0 20px 0; text-align: center; }
+        nav { background: #fff; box-shadow: 0 2px 6px #eee; text-align: center; }
+        nav a { margin: 0 16px; color: #531a1c; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .logo { width: 110px; display: block; margin: 0 auto 15px auto;}
+        .container { max-width: 900px; margin: 30px auto; background: #fff; padding: 28px; border-radius: 10px; }
+        h1, h2 { color: #531a1c; }
+        .news-card { border-bottom: 1px solid #eee; margin-bottom: 22px; padding-bottom: 16px; }
+        .news-card:last-child { border: none; }
+        .btn { background: #531a1c; color: #fff; padding: 10px 26px; border: none; border-radius: 4px; font-size: 15px; cursor: pointer; }
+        .btn:hover { opacity: .85; }
+        form input, form textarea { width: 92%; margin: 7px 0 15px 0; padding: 8px; border: 1px solid #ccc; border-radius: 5px; }
+        @media(max-width: 600px){
+            .container { padding: 10px; }
+            .logo { width: 70px;}
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cybertails-logo.jpg" class="logo" alt="Cyber Tails Logo">
+        <h1>CYBER TAILS</h1>
+        <p>Your trusted directory for the latest in cybercrime news and awareness</p>
+    </header>
+    <nav>
+        <a href="#news">Latest News</a>
+        <a href="#report">Report Incident</a>
+        <a href="#awareness">Awareness</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container" id="news">
+        <h2>Latest Cybercrime News</h2>
+        <div class="news-card">
+            <h3>Hospital Targeted by Major Ransomware Attack</h3>
+            <p>Multiple hospitals across Europe hit by a ransomware outbreak affecting patient care and demanding large payments.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="news-card">
+            <h3>Banking Customers Face New Phishing Scam</h3>
+            <p>Security teams caution about a spike in phishing SMS and fake banking portals stealing user credentials.</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <!-- Add more news items as needed -->
+    </div>
+    <div class="container" id="report">
+        <h2>Report a Cyber Incident</h2>
+        <form>
+            <label>Incident Title:</label><br>
+            <input type="text" name="title" required><br>
+            <label>Description:</label><br>
+            <textarea name="desc" required></textarea><br>
+            <label>Your Email (optional):</label><br>
+            <input type="email" name="email"><br>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+        <small>For demo purposes only; submissions are not sent to authorities.</small>
+    </div>
+    <div class="container" id="awareness">
+        <h2>Awareness Articles & Tips</h2>
+        <ul>
+            <li>How to recognize phishing links</li>
+            <li>Steps after a personal data breach</li>
+            <li>Tips for strong passwords & privacy</li>
+        </ul>
+        <a href="#" class="btn">Explore More Tips</a>
+    </div>
+    <div class="container" id="contact">
+        <h2>Contact & Resources</h2>
+        <p>
+            <b>Indian Cybercrime Reporting Portal:</b><br>
+            <a href="https://i4c.mha.gov.in">https://i4c.mha.gov.in</a>
+        </p>
+        <p>Email: support@cybertails.com<br>
+        Phone: +91-xxxxxxxxxx</p>
+    </div>
+</body>
+</html>
