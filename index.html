@@ -38,10 +38,30 @@
     </nav>
     <div class="container" id="news">
         <h2>Latest Cybercrime News</h2>
-        <div class="news-card">
-            <h3>Hospital Targeted by Major Ransomware Attack</h3>
-            <p>Multiple hospitals across Europe hit by a ransomware outbreak affecting patient care and demanding large payments.</p>
-            <a href="#" class="btn">Read More</a>
+       <div class="news-card">
+  <h3>Hospital Targeted by Major Ransomware Attack</h3>
+  <p>Multiple hospitals across Europe hit by a ransomware outbreak affecting patient care and demanding large payments.</p>
+
+  <!-- Read More Button -->
+  <button class="btn" onclick="document.getElementById('news1').style.display='block'">Read More</button>
+
+  <!-- Full News Content -->
+  <div id="news1" style="display:none; margin-top:10px;">
+    <p>
+      In one of the most alarming cyberattacks of the year, several hospitals across Europe have fallen victim to a highly coordinated ransomware campaign. The attackers used phishing emails disguised as official hospital communication to gain access to internal systems. Once inside, malware encrypted critical patient data, rendering digital records inaccessible and forcing some hospitals to shut down essential services like digital patient registration and electronic prescriptions.
+    </p>
+    <p>
+      Cybersecurity experts believe the ransomware strain used is linked to a notorious cybercriminal group operating out of Eastern Europe. The group has demanded payments exceeding €5 million per hospital in cryptocurrency. Law enforcement agencies, including Europol and INTERPOL, are currently investigating. Authorities strongly advise healthcare institutions not to pay the ransom and to immediately report any suspicious digital activity.
+    </p>
+    <p>
+      This attack has intensified concerns about the vulnerability of public health infrastructure and the urgent need to strengthen cybersecurity protocols in the healthcare sector. Experts suggest implementing advanced threat detection systems, conducting regular staff cyber-awareness training, and adopting zero-trust architecture to protect against future intrusions.
+    </p>
+
+    <!-- 👇 Show Less / Close Button goes here -->
+    <button class="btn" onclick="document.getElementById('news1').style.display='none'">Show Less</button>
+  </div>
+</div>
+
         </div>
        <div class="news-card">
     <h3>Hospital Targeted by Major Ransomware Attack</h3>
